@@ -216,7 +216,6 @@ class Team:
     account_id: Optional[float] = None
     is_member: Optional[bool] = None
 
-
 @dataclass
 class IntegrationsApp:
     id: Optional[str] = None
@@ -403,7 +402,7 @@ class AutomationRuleCreateUpdatePayload:
 @dataclass
 class PublicContactCreateUpdatePayload:
     identifier: Optional[str] = None
-    identifier_hash: Optional[str] = None
+    source_id: Optional[str] = None
     email: Optional[str] = None
     name: Optional[str] = None
     phone_number: Optional[str] = None
